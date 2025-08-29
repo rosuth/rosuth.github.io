@@ -4,81 +4,103 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Projects</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
   <style>
     body {
-      font-family: Ubuntu;
+      font-family: "Lato", sans-serif;
       margin: 0;
       padding: 0;
+      background-color: #f5f7fa;
+      color: #333;
+    }
+
+    h3 {
       text-align: center;
-      background-color: #f9f9f9;
+      margin: 40px 0 20px;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #007acc;
     }
-    h1 {
-      margin: 30px 0;
-    }
+
     .projects {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 20px;
-      max-width: 1000px;
+      max-width: 1100px;
       margin: 0 auto;
       padding: 20px;
     }
+
     .project-box {
       background: white;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      padding: 20px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      border-radius: 12px;
+      padding: 25px;
+      text-align: left;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      border: 1px solid #eee;
     }
-    .project-box h3 {
-      margin: 0 0 10px;
-    }
-    .project-box p {
-      margin: 5px 0;
-      color: #555;
-    }
-    .project-box a {
+
+    .project-box h4 {
+      margin: 0 0 12px;
+      font-size: 1.2rem;
+      font-weight: 600;
       color: #007acc;
+    }
+
+    .project-box p {
+      margin: 0 0 15px;
+      color: #555;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    .project-box a {
+      font-size: 14px;
+      font-weight: 600;
       text-decoration: none;
+      color: #007acc;      
     }
-    .project-box a:hover {
-      text-decoration: underline;
-    }
+
   </style>
 </head>
 <body>
-  <h1>My Projects</h1>
+  <h3>🚀 My Projects</h3>
 
   <div class="projects">
     <div class="project-box">
-      <h3>Project 1</h3>
-      <p>Short description of Project 1</p>
-      <a href="#">Repo Link</a>
+      <h4>Containerized Spring Boot Application with MySQL</h4>
+      <p>A Docker-powered Spring Boot application with a MySQL database, containerized using Docker Compose for streamlined deployment.</p>
+      <a target="_blank" href ="https://github.com/rosuth/spring-mysql-docker">Repository</a>
     </div>
     <div class="project-box">
-      <h3>Project 2</h3>
-      <p>Short description of Project 2</p>
-      <a href="#">Repo Link</a>
+      <h4>Containerized Spring Boot Deployment to Kubernetes via Minikube</h4>
+      <p>A Spring Boot application packaged as a Docker container and deployed on a local Kubernetes cluster using Minikube.</p>
+      <a target="_blank" href ="https://github.com/rosuth/springboot-minikube">Repository</a>
     </div>
     <div class="project-box">
-      <h3>Project 3</h3>
-      <p>Short description of Project 3</p>
-      <a href="#">Repo Link</a>
+      <h4>REST API with Spring Boot</h4>
+      <p>A Spring Boot-based RESTful API that implements CRUD operations on customer data using MySQL, JSP/HTML, and AJAX.</p>
+      <a target="_blank" href ="https://github.com/rosuth/spring-boot-restAPIs">Repository</a>
     </div>
     <div class="project-box">
-      <h3>Project 4</h3>
-      <p>Short description of Project 4</p>
-      <a href="#">Repo Link</a>
+      <h4>Employee & Leave Management Web App</h4>
+      <p>A Spring-based web application for employee and leave management, containerized with Docker and deployable in Kubernetes.</p>
+      <a target="_blank" href ="https://github.com/rosuth/employee-care">Repository</a>
     </div>
     <div class="project-box">
-      <h3>Project 5</h3>
-      <p>Short description of Project 5</p>
-      <a href="#">Repo Link</a>
+      <h4>Deployable Spring Boot + MySQL App on AWS EC2</h4>
+      <p>A Spring Boot application containerized with Docker Compose, configured for deployment with MySQL on AWS EC2.</p>
+      <a target="_blank" href ="https://github.com/rosuth/spring-boot-ec2-starter">Repository</a>
     </div>
     <div class="project-box">
-      <h3>Project 6</h3>
-      <p>Short description of Project 6</p>
-      <a href="#">Repo Link</a>
+      <h4>Custom Database Caching in Spring Boot</h4>
+      <p>A Spring Boot project demonstrating custom database caching techniques for optimized performance.</p>
+      <a target="_blank" href ="https://github.com/rosuth/db-caching-spring-boot">Repository</a>
     </div>
   </div>
 </body>

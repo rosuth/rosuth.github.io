@@ -15,16 +15,23 @@
       font-family: "Lato", sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f5f7fa;
-      color: #333;
+      background-color: #1e1e1e; /* Dark theme default */
+      color: #ddd;
+    }
+
+    .header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      margin: 40px 0 20px;
     }
 
     h3 {
-      text-align: center;
-      margin: 40px 0 20px;
-      font-size: 1.5rem;
+      font-size: 1.1rem;
       font-weight: 700;
-      color: #007acc;
+      color: white;
+      margin: 0;
     }
 
     .projects {
@@ -37,48 +44,56 @@
     }
 
     .project-box {
-      background: white;
-      border-radius: 12px;
-      padding: 25px;
+      background: #2b2b2b;
+      border-radius: 7px;
+      padding: 15px;
       text-align: left;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-      border: 1px solid #eee;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      border: 1px solid #444;
     }
 
     .project-box h4 {
       margin: 0 0 12px;
-      font-size: 1.2rem;
+      font-size: 0.9rem;
       font-weight: 600;
-      color: #007acc;
+      color: white;
     }
 
     .project-box p {
       margin: 0 0 15px;
-      color: #555;
-      font-size: 14px;
+      color: #bbb;
+      font-size: 0.8rem;
       line-height: 1.5;
     }
 
     .project-box a {
-      font-size: 14px;
+      font-size: 0.8rem;
       font-weight: 600;
       text-decoration: none;
-      color: #007acc;      
+      color: white;      
     }
 
+    hr {
+      width: 70%;
+      color: white;
+      border: 1px solid white;
+    }
   </style>
 </head>
 <body>
-  <h3>🚀 My Projects</h3>
+  <div class="header">
+    <h3>🚀 My Projects</h3>
+  </div>
+  <hr/>
 
   <div class="projects">
     <div class="project-box">
-      <h4>Containerized Spring Boot Application with MySQL</h4>
+      <h4>Containerized Spring Boot + MySQL</h4>
       <p>A Docker-powered Spring Boot application with a MySQL database, containerized using Docker Compose for streamlined deployment.</p>
       <a target="_blank" href ="https://github.com/rosuth/spring-mysql-docker">Repository</a>
     </div>
     <div class="project-box">
-      <h4>Containerized Spring Boot Deployment to Kubernetes via Minikube</h4>
+      <h4>Spring Boot deployment on Kubernetes</h4>
       <p>A Spring Boot application packaged as a Docker container and deployed on a local Kubernetes cluster using Minikube.</p>
       <a target="_blank" href ="https://github.com/rosuth/springboot-minikube">Repository</a>
     </div>
@@ -88,17 +103,17 @@
       <a target="_blank" href ="https://github.com/rosuth/spring-boot-restAPIs">Repository</a>
     </div>
     <div class="project-box">
-      <h4>Employee & Leave Management Web App</h4>
+      <h4>Employee & Leave Management App</h4>
       <p>A Spring-based web application for employee and leave management, containerized with Docker and deployable in Kubernetes.</p>
       <a target="_blank" href ="https://github.com/rosuth/employee-care">Repository</a>
     </div>
     <div class="project-box">
-      <h4>Deployable Spring Boot + MySQL App on AWS EC2</h4>
+      <h4>Spring Boot + MySQL on AWS EC2</h4>
       <p>A Spring Boot application containerized with Docker Compose, configured for deployment with MySQL on AWS EC2.</p>
       <a target="_blank" href ="https://github.com/rosuth/spring-boot-ec2-starter">Repository</a>
     </div>
     <div class="project-box">
-      <h4>Custom Database Caching in Spring Boot</h4>
+      <h4>Custom Database Caching</h4>
       <p>A Spring Boot project demonstrating custom database caching techniques for optimized performance.</p>
       <a target="_blank" href ="https://github.com/rosuth/db-caching-spring-boot">Repository</a>
     </div>

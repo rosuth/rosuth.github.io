@@ -3,38 +3,83 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
+  <title>My Projects</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-    header { background: #333; color: white; padding: 20px; text-align: center; }
-    section { padding: 20px; }
-    .project { margin-bottom: 20px; }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      background-color: #f9f9f9;
+    }
+    h1 {
+      margin: 30px 0;
+    }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .project-box {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+    .project-box h3 {
+      margin: 0 0 10px;
+    }
+    .project-box p {
+      margin: 5px 0;
+      color: #555;
+    }
+    .project-box a {
+      color: #007acc;
+      text-decoration: none;
+    }
+    .project-box a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Hi, I'm YOUR NAME 👋</h1>
-    <p>Welcome to my portfolio!</p>
-  </header>
-  <section>
-    <h2>About Me</h2>
-    <p>A short bio about who you are, your skills, and what you’re working on.</p>
-  </section>
-  <section>
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>🔹 Project 1</h3>
-      <p>Description of the project. <a href="https://github.com/your-username/project1">View on GitHub</a></p>
+  <h1>My Projects</h1>
+
+  <div class="projects">
+    <div class="project-box">
+      <h3>Project 1</h3>
+      <p>Short description of Project 1</p>
+      <a href="#">Repo Link</a>
     </div>
-    <div class="project">
-      <h3>🔹 Project 2</h3>
-      <p>Description of the project. <a href="https://github.com/your-username/project2">View on GitHub</a></p>
+    <div class="project-box">
+      <h3>Project 2</h3>
+      <p>Short description of Project 2</p>
+      <a href="#">Repo Link</a>
     </div>
-  </section>
-  <section>
-    <h2>Contact</h2>
-    <p>Email: your@email.com</p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile">linkedin.com/in/yourprofile</a></p>
-  </section>
+    <div class="project-box">
+      <h3>Project 3</h3>
+      <p>Short description of Project 3</p>
+      <a href="#">Repo Link</a>
+    </div>
+    <div class="project-box">
+      <h3>Project 4</h3>
+      <p>Short description of Project 4</p>
+      <a href="#">Repo Link</a>
+    </div>
+    <div class="project-box">
+      <h3>Project 5</h3>
+      <p>Short description of Project 5</p>
+      <a href="#">Repo Link</a>
+    </div>
+    <div class="project-box">
+      <h3>Project 6</h3>
+      <p>Short description of Project 6</p>
+      <a href="#">Repo Link</a>
+    </div>
+  </div>
 </body>
 </html>
